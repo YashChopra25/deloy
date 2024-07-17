@@ -20,7 +20,10 @@ const startServer = async () => {
     console.log("Connected to Database");
 
     app.get("/", (req, res) => {
-      res.send("Hello World");
+      res.send("Hello World from backend");
+    });
+    app.get("/honmw", (req, res) => {
+      res.send("Hello World from hmow");
     });
 
     app.get("/hello-satyam", (req, res) => {
